@@ -1,0 +1,283 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Discord.Addons.PassiveInteractive" Version="2.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.0.1" />
+    <PackageReference Include="Passive.Discord" Version="1.0.0" />
+    <PackageReference Include="RavenBOT.Common" Version="2.0.0.4" />
+    <PackageReference Include="RavenBOT.Services.HelpService" Version="2.0.0.7" />
+    <PackageReference Include="RavenBOT.Services.Reactive" Version="2.0.0.4" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="CsvHelper">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="DasMulli.Win32.ServiceUtils">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\DasMulli.Win32.ServiceUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="Esprima">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Esprima.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoAPI">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\GeoAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Jint">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Jint.dll</HintPath>
+    </Reference>
+    <Reference Include="Lambda2Js.Signed">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Lambda2Js.Signed.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Spatial.NTS">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Lucene.Net.Contrib.Spatial.NTS.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Connections.Abstractions">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.AspNetCore.Connections.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.AspNetCore.Hosting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting.Abstractions">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.AspNetCore.Hosting.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting.Server.Abstractions">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.AspNetCore.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Abstractions">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.AspNetCore.Http.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Extensions">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.AspNetCore.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Features">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.AspNetCore.Http.Features.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.ResponseCompression">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.AspNetCore.ResponseCompression.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Server.Kestrel">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.AspNetCore.Server.Kestrel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Server.Kestrel.Core">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.AspNetCore.Server.Kestrel.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Server.Kestrel.Https">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.AspNetCore.Server.Kestrel.Https.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.WebSockets">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.AspNetCore.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.WebUtilities">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.AspNetCore.WebUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.CodeAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp.Workspaces">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.CodeAnalysis.CSharp.Workspaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.Workspaces">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.CodeAnalysis.Workspaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.CommandLineUtils">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.Extensions.CommandLineUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.CommandLine">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.Extensions.Configuration.CommandLine.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.EnvironmentVariables">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.Extensions.Configuration.EnvironmentVariables.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.FileExtensions">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.Extensions.Configuration.FileExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Json">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.Extensions.Configuration.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.UserSecrets">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.Extensions.Configuration.UserSecrets.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Abstractions">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.Extensions.FileProviders.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Physical">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.Extensions.FileProviders.Physical.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileSystemGlobbing">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.Extensions.FileSystemGlobbing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Hosting.Abstractions">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.Extensions.Hosting.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.ObjectPool">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.Extensions.ObjectPool.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Net.Http.Headers">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Microsoft.Net.Http.Headers.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="NCrontab.Advanced">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\NCrontab.Advanced.dll</HintPath>
+    </Reference>
+    <Reference Include="NetTopologySuite">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\NetTopologySuite.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Client">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Raven.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Server">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Raven.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="RavenBOT.Common">
+      <HintPath>..\..\..\_archived_elo-master\RavenBOT.Common\bin\Debug\netstandard2.1\RavenBOT.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="RavenBOT.Database.LiteDatabase">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.LiteDatabase\bin\Debug\netstandard2.1\RavenBOT.Database.LiteDatabase.dll</HintPath>
+    </Reference>
+    <Reference Include="RavenBOT.Database.RavenDatabase">
+      <HintPath>..\..\..\_archived_elo-master\RavenBOT.Database.RavenDatabase\bin\Debug\netstandard2.1\RavenBOT.Database.RavenDatabase.dll</HintPath>
+    </Reference>
+    <Reference Include="RavenBOT.Database.RavenEmbedded">
+      <HintPath>..\..\..\_archived_elo-master\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenBOT.Database.RavenEmbedded.dll</HintPath>
+    </Reference>
+    <Reference Include="RavenBOT.Services.ConfigManager">
+      <HintPath>..\..\..\_archived_elo-master\RavenBOT.Services.ConfigManager\bin\Debug\netstandard2.1\RavenBOT.Services.ConfigManager.dll</HintPath>
+    </Reference>
+    <Reference Include="RavenBOT.Services.HelpService">
+      <HintPath>..\..\..\_archived_elo-master\RavenBOT.Services.HelpService\bin\Debug\netstandard2.1\RavenBOT.Services.HelpService.dll</HintPath>
+    </Reference>
+    <Reference Include="RavenBOT.Services.ModuleLoader">
+      <HintPath>..\..\..\_archived_elo-master\RavenBOT.Services.ModuleLoader\bin\Debug\netstandard2.1\RavenBOT.Services.ModuleLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="RavenBOT.Services.Reactive">
+      <HintPath>..\..\..\_archived_elo-master\RavenBOT.Services.Reactive\bin\Debug\netstandard2.1\RavenBOT.Services.Reactive.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpSnmpLib">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\SharpSnmpLib.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpSnmpLib.Engine">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\SharpSnmpLib.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="Sparrow">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Sparrow.dll</HintPath>
+    </Reference>
+    <Reference Include="Sparrow.Server">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Sparrow.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Spatial4n.Core.NTS">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Spatial4n.Core.NTS.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Composition.AttributedModel">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\System.Composition.AttributedModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Composition.Convention">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\System.Composition.Convention.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Composition.Hosting">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\System.Composition.Hosting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Composition.Runtime">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\System.Composition.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Composition.TypedParts">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\System.Composition.TypedParts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.ConfigurationManager">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlClient">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipelines">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.WebSocketProtocol">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\System.Net.WebSockets.WebSocketProtocol.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.ProtectedData">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\System.Security.Cryptography.ProtectedData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="Voron">
+      <HintPath>..\..\RavenBOT-RavenBOT-Libraries-V2\RavenBOT.Database.RavenEmbedded\bin\Debug\netstandard2.1\RavenDBServer\Voron.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
